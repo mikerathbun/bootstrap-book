@@ -69,24 +69,58 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <form>
-        <div class="form-group row">
-          <label for="inputHostname" class="col-sm-2 col-form-label col-form-label-sm">Hostname</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control form-control-sm" id="inputHostname" aria-describedby="hostnameHelp" placeholder="Hostname">
-            <small id="hostnameHelp" class="form-text text-muted">Some hostnames are unavailable</small>
+        <div class="form-row">
+          <div class="col-lg-1 col-md-4">
+            <label for="inputHostname">Installation:</label>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <select class="form-control" id="inputInstallation">
+              <option>JB Fort Sam</option>
+              <option>JB Other Place</option>
+              <option>JB San Antonio</option>
+            </select>
+          </div>
+          <div class="col-lg-1 col-md-4">
+            <label for="inputHostname">Hostname:</label>
+          </div>
+          <div class="col-lg-4 col-md-8">
+              <input type="text" class="form-control" id="inputHostname" placeholder="Hostname">
           </div>
         </div>
-        <div class="form-group row">
-          <label for"inputIPAddress" class="col-sm-2 col-form-label col-form-label-sm">IP Address</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control form-control-sm" id="inputIPAddress" placeholder="IP Address">
+        <div class="form-row">
+          <div class="col-lg-1 col-md-4">
+            <label for="inputScandate">Scan Date:</label>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <select class="form-control" id="inputScandate">
+              <option>03-Mar-2019</option>
+              <option>01-Mar-2019</option>
+              <option>23-Feb-2019</option>
+            </select>
+          </div>
+          <div class="col-lg-1 col-md-4">
+            <label for="inputHostname">IP Address:</label>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <input type="text" class="form-control" id="inputHostname" aria-describedby="hostnameHelp" placeholder="IP Address">
           </div>
         </div>
-        <div class="form-group row">
-          <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Search</button>
+        <div class="form-row">
+          <div class="col-lg-1 col-md-4"></div>
+          <div class="col-lg-4 col-md-8"></div>
+          <div class="col-lg-1 col-md-4">
+            <label for="inputOrganization">Organization:</label>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <select class="form-control" id="inputOrganization">
+              <option>NEC</option>
+              <option>METC</option>
+              <option>AMEDDCS</option>
+              <option>ARNorth</option>
+            </select>
           </div>
         </div>
+        <button class="btn btn-primary btn-sm" type="submit">Search</button>
     </form>
 
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
