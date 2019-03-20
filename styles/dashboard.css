@@ -104,3 +104,8 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
+
+.row .form-group {
+  outline: 1px solid orange;
+  background-color: blue;
+}
