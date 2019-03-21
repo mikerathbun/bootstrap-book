@@ -106,6 +106,9 @@ body {
 }
 
 .row .form-group {
-  outline: 1px solid orange;
-  background-color: blue;
+  outline: 1px solid blue;
+}
+
+.row {
+  outline: 1px solid red;
 }
